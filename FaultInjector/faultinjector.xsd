@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="campaign">
+	  <xs:complexType>
+		<xs:sequence>
+			<xs:element name="testCase" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="fileLocation" type="xs:string"/>
+						<xs:element name="testDescription">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="repl" minOccurs="0" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="tag" type="xs:string"/>
+												<xs:element name="val" type="xs:string"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="testId" type="xs:string" use="required"/>
+					<xs:attribute name="testType" type="xs:byte" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	  <xs:attribute name="campaignId" type="xs:string" use="required"/>
+	  </xs:complexType>
+	</xs:element>
+	
+</xs:schema>

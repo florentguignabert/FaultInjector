@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<campaign campaignId="campagne33">
+	<testCase testId="test01" testType="0">
+		<fileLocation>
+			/pok/examples/arinc653-blackboard/generated-code/cpu/part1/activity.c
+		</fileLocation>
+		<testDescription>
+		</testDescription>
+	</testCase>
+	<testCase testId="test02" testType="1">
+		<fileLocation>
+			/pok/examples/arinc653-blackboard/generated-code/cpu/part1/activity.c
+		</fileLocation>
+		<testDescription>
+		</testDescription>
+	</testCase>
+</campaign>
